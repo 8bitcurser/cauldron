@@ -15,9 +15,7 @@ func main() {
 	})
 
 	router.GET("/message", func(c *gin.Context) {
-		c.JSON(http.StatusOK, gin.H{
-			"message": "HTMX powered",
-		})
+		c.HTML(http.StatusOK, "powered_by.html", gin.H{})
 	})
 	router.Run()
 }
