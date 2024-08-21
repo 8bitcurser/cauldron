@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="3fa35ff9-ea4e-4844-baa6-8fbeb18288cd" name="cauldron Mapping">
+      <data-sources db="27231d21-1154-4b54-ad96-bce7477f329f" />
+      <scope>
+        <node negative="1">
+          <node kind="database" negative="1" />
+          <node kind="schema" qname="main" />
+        </node>
+      </scope>
+    </mapping>
+  </component>
+</project>
