@@ -1,16 +1,17 @@
 package main
 
 import (
-	_ "github.com/mattn/go-sqlite3"
+	_ "gorm.io/gorm"
 	"time"
 )
 
 type Event struct {
-	id          int
-	title       string
-	start_date  time.Time
-	end_date    time.Time
-	last_notify time.Time
+	ID         int    `gorm:"primary_key"`
+	Title      string `gorm:"not null"`
+	StartDate  time.Time
+	EndDate    time.Time
+	LastNotify time.Time
+	NextNotify time.Time
 	// daily, weekly, monthly, yearly, custom
-	repeat string
+	Repeat string
 }
